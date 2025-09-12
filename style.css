@@ -115,13 +115,13 @@ p {
 }
 
 .skills-container {
-    width: 350px;
+    width: 250px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;;
-    padding-left: 50px;
+     padding-left: 50px;
     padding-right: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
