@@ -67,15 +67,26 @@ nav a:hover {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 6px solid #E8FFD7;
+    border: 10px solid #E8FFD7;
 }
 
 .name {
+    
     text-align: center;
     color: #E8FFD7;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 2rem;
+    border-right: 4px solid #3E5F44; /* cursor */
+    animation: blink 0.7s step-end infinite;
+    margin: auto;
+    padding-right: 8px;
+    width: fit-content;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+  0%, 100% { border-color: #3E5F44; }
 }
 
 .welcome {
