@@ -1,10 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
+const menuIcon = document.querySelector('.menu-icon');
+const navMenu = document.querySelector('nav ul');
+
+menuIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+    
+});
+
+document.addEventListener('DOMContentLoaded', function () {
     const name = "hi, i'm tasnim!";
     const nameElement = document.getElementById('typing-animation');
     let i = 0;
 
     function type() {
-        if(i <= name.length) {
+        if (i <= name.length) {
             nameElement.textContent = name.slice(0, i);
             i++;
             setTimeout(type, 100);
@@ -14,12 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.querySelectorAll('nav a[href^="#"]').forEach(link => {
-    link.addEventListener('click', function(e) {
+    link.addEventListener('click', function (e) {
         const targetId = this.getAttribute('href');
-        if(targetId.length > 1) {
+        if (targetId.length > 1) {
             e.preventDefault();
             const target = document.querySelector(targetId);
-            if(target) {
+            if (target) {
                 target.scrollIntoView({ behavior: 'smooth' });
             }
         }

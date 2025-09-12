@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <link rel="stylesheet" href="style.css">
     <title>portfolio</title>
 </head>
+
 <body>
     <main>
         <section class="nav-bar">
@@ -20,31 +24,43 @@
                     <li><a href="#projects">projects</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
-                
+
             </nav>
+            <span class="material-symbols-outlined menu-icon">
+                menu
+            </span>
         </section>
         <section class="hero" id="hero">
             <div class="image-container">
                 <img src="images/image.jpg" alt="picture of me">
             </div>
-                <h1 class="name" id="typing-animation">hi, i'm tasnim!</h1>
-                <p class="welcome">welcome to my page!</p>
+            <h1 class="name" id="typing-animation">hi, i'm tasnim!</h1>
+            <p class="welcome">welcome to my page!</p>
         </section>
-        <section class="about-me" id="about-me">
+        <div class="flex-gap">
+            <section class="about-me" id="about-me">
             <h2>about me</h2>
-            <p>hi there! i'm a senior computer science student at ASU. i'm interested in exploring web development and UI/UX design. i'm excited
-                for this new chapter of growth and learning as a programmer! feel free to reach out to me through my contact page.
+            <p>hi there! i'm a senior computer science student at ASU. i'm interested in exploring web development and
+                UI/UX design. i'm excited
+                for this new chapter of growth and learning as a programmer! feel free to reach out to me through my
+                contact page.
             </p>
         </section>
         <section class="skills" id="skills">
             <h2>skills</h2>
-            <div class="skills-image">
+            </div> -->
+            <div class="row">
+                <div class="skills-container">
                 <img src="images/html.png" alt="html logo">
-                <img src="images/css-file.png" alt="css logo">
-                <img src="images/javascript.png" alt="javascript logo">
-                <img src="images/java.png" alt="java logo">
-                <img src="images/c-.png" alt="c++ logo">
             </div>
+            <div class="skills-container">
+                <img src="images/css.png" alt="css logo">
+            </div>
+            <div class="skills-container">
+                <img src="images/js.png" alt="js logo">
+            </div>
+            </div>
+            
         </section>
         <section class="projects" id="projects">
             <h2>projects</h2>
@@ -52,7 +68,7 @@
                 <span class="title">bear personality quiz</span>
                 <span class="project-description">fun and interactive quiz that determines your personality!</span>
             </a>
-            
+
         </section>
         <section class="contact" id="contact">
             <h2>contact</h2>
@@ -65,9 +81,11 @@
                 </a>
             </div>
         </section>
+        </div>
+        
         <section class="footer">
             <p>© 2025 Tasnim Haque</p>
-            <p>Icon by Freepik from 
+            <p>Icon by Freepik from
                 <a href="https://www.flaticon.com/">www.flaticon.com
                 </a>
             </p>
@@ -75,4 +93,5 @@
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
